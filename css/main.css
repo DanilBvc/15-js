@@ -164,3 +164,14 @@ select {
   -ms-flex-align: center;
   align-items: center;
 }
+.restart__btn, .sound__btn {
+  text-align: center;
+  padding: 10px;
+  background-color: beige;
+  border: 1px solid gray;
+  max-width: 100px;
+  margin: 0 auto;
+}
+.save {
+display: block;
+margin: 0 auto;}
