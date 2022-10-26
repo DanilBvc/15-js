@@ -1,4 +1,3 @@
-// alert('Прошу проверить в последний день в сроки не получилось вложиться')
 const body = document.body;
 let Board;
 const cellCount = 4;
@@ -70,7 +69,7 @@ const defaultHtml = (cellCount, board) => {
     );
   }
   res = arrayOfString.join('');
-  return `${`<div class="restart__btn">Restart</div>  <button class="save">save</button><div class="sound__btn">sound</div><div class="_moves">Moves :0</div><div class="_timer">0s</div><div class="main grid-cell-4" >${arrayOfString.join(
+  return `${`<div class="restart__btn">Restart</div>  <button class="save">save</button><div class="sound__btn">sound on/off</div><div class="_moves">Moves :0</div><div class="_timer">0s</div><div class="main grid-cell-4" >${arrayOfString.join(
     ''
   )}</div>`}`;
 };
@@ -292,6 +291,7 @@ main.addEventListener('click', (e) => {
           localStorage.removeItem('cords');
         } else {
           console.log('local storage is empty');
+          window.location.reload()
         }
       });
     }
